@@ -1,8 +1,8 @@
 <template>
 	<div class="hello">
-		<!-- <p align="center">
+		<p align="center">
 			<a href="./files/Parish-resume.pdf" download>DOWNLOAD</a>
-		</p> -->
+		</p>
 		<div class="parent">
 			<div class="div1"><img src="@/assets/headshot.jpg" /></div>
 			<div class="div2">
