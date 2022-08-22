@@ -1,10 +1,13 @@
 <template>
 	<div class="hello">
+		<p align="center">
+			<a href="./files/Parish-resume.pdf" download>DOWNLOAD</a>
+		</p>
 		<div class="parent">
 			<div class="div1"><img src="@/assets/headshot.jpg" /></div>
 			<div class="div2">
 				<div class="name">Parish A. Neighbors</div>
-				<div class="contact-info">parish@snapit.solutions</div>
+				<div class="contact-info">pn8bors@gmail.com</div>
 				<div class="contact-info">(816) 674-9001</div>
 			</div>
 			<div class="div3"><DivThree /></div>
@@ -21,8 +24,8 @@ export default {
 	name: "HelloWorld",
 	components: {
 		DivThree,
-    DivFour,
-	}
+		DivFour,
+	},
 };
 </script>
 
@@ -45,10 +48,9 @@ export default {
 .div1 {
 	grid-area: 1 / 1 / 2 / 3;
 	display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
+	flex-direction: row-reverse;
+	align-items: center;
 	background: rgb(160, 221, 245);
-
 }
 .div2 {
 	grid-area: 1 / 3 / 2 / 6;
@@ -80,7 +82,7 @@ export default {
 
 img {
 	height: 250px;
-  width: auto;
+	width: auto;
 }
 .name {
 	font-size: 48px;
@@ -89,4 +91,18 @@ img {
 	font-size: 24px;
 }
 
+p {
+	font-size: 30px;
+	padding-bottom: 30px;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+a:hover {
+	color: rgb(160, 221, 245);
+	-webkit-text-fill-color: rgb(160, 221, 245); /* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
 </style>
